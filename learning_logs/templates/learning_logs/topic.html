@@ -1,0 +1,12 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+    Topic {{ topic.name }}
+
+    Anzahl Einträgen: {{ entries | length }}
+    <ul>
+        {%  for entry in entries %}
+            <li><a href="{% url 'learning_logs:entry' entry.id %}">{{ entry }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Log</title>
+    <link rel="stylesheet" href="{% static 'learning_logs/style.css' %}">
+</head>
+<body>
+
+    <a href="{%  url 'learning_logs:index' %}"> Learning Log </a>
+    <ul>
+        <li><a href="{% url 'learning_logs:index' %}">Home</a></li>
+        <li><a href="{% url 'learning_logs:about' %}">About</a></li>
+        <li><a href="{% url 'learning_logs:contact' %}">Contact</a></li>
+    </ul>
+{%  block content %}
+{%  endblock  %}
+<footer> this is the footer</footer>
+</body>
+</html>
