@@ -22,3 +22,8 @@ def topic(request, topic_id):
 def entry(request, entry_id):
     entry = Entry.objects.get(id=entry_id)
     return render(request, "learning_logs/entry.html", {"entry": entry})
+
+def edit(request, topic_id):
+    # create form object
+    if request.POST:
+        pass

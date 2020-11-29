@@ -11,4 +11,5 @@ urlpatterns = [
     url('contact', views.contact, name="contact"),
     url(r'^topic/(?P<topic_id>\d+$)', views.topic, name="topic"),
     url(r'^entry/(?P<entry_id>\d+$)', views.entry, name="entry")
+    url(r'^topic/edit/(?P<topic_id>\d+$)', views.edit, name="edit")
 ]
