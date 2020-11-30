@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=120)),
                 ('credatim', models.DateTimeField(auto_now_add=True)),
                 ('upddatim', models.DateTimeField(auto_now_add=True)),
-                ('topic', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='learning_logs.topic')),
+                ('topic', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='learning_log.topic')),
             ],
             options={
                 'verbose_name_plural': 'entries',

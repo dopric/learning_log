@@ -1,4 +1,4 @@
 .idea
 *.sqlite3
-*/__pycache__/
-*.pyc
+learning_log/__pycache__/*.*
+learning_log/__pycache__/
